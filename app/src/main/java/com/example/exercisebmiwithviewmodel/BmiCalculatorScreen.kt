@@ -28,14 +28,14 @@ fun BmiCalculatorScreen(bmiViewModel: BmiViewModel = viewModel()) {
         OutlinedTextField(
             value = bmiViewModel.heightInput,
             onValueChange = { bmiViewModel.heightInput = it },
-            label = { Text("Height") },
+            label = { Text("Height (m)") },
             modifier = Modifier.fillMaxWidth()
         )
         Spacer(modifier = Modifier.height(8.dp))
         OutlinedTextField(
             value = bmiViewModel.weightInput,
             onValueChange = { bmiViewModel.weightInput = it },
-            label = { Text("Weight") },
+            label = { Text("Weight (kg)") },
             modifier = Modifier.fillMaxWidth()
         )
         Spacer(modifier = Modifier.height(16.dp))

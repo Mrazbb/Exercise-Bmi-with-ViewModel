@@ -14,6 +14,10 @@ class BmiViewModel : ViewModel() {
         get() {
             val height = heightInput.toDoubleOrNull()
             val weight = weightInput.toDoubleOrNull()
+            println("test")
+            println(height)
+            println(weight)
+
             if (height != null && weight != null && height > 0) {
                 return weight / (height * height)
             }
